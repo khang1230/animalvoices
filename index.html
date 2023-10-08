@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>Sound Identification Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div class="headerDiv">
+      <h2>Animal Sounds</h2>
+      <p>Note: Play sounds like barking, meowing, mooing, and roaring</p>
+    </div>
+    <br>
+
+    <div class="mainDiv">
+      <button class="btn btn-info startBtn" onclick="start()">Start</button>
+      <br>
+      <div id="sounds">
+        <h4 id="detection1">Bark - <span id="barkRate">0</span></h4>
+        
+        <h4 id="detection1">Meow - <span id="meowRate">0</span></h4>
+        
+        <h4 id="detection1">Moo - <span id="mooRate">0</span></h4>
+        
+        <h4 id="detection1">Roar - <span id="roarRate">0</span></h4>
+      </div>
+      <hr>
+      <h4 id="voice">Dectected Voice - </h4>
+      <br>
+      <img id="voices" src="ear.png" height="300" width="300">
+    </div>
+
+    <div class="footerDiv">
+      <p>Developed by Khang</p>
+    </div>
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
